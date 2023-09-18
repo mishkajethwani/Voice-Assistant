@@ -1,48 +1,54 @@
-Voice Assistant
-Overview
-This is a simple voice assistant programmed in Python. It can listen to voice commands, process them, and respond with audio feedback. The assistant can interact with your Google Calendar to provide information about your upcoming events.
+# Voice Assistant
 
-Features
-Speech Recognition: The assistant uses the speech_recognition library to convert spoken words into text.
-Voice Commands: Recognizes predefined voice commands to perform specific actions.
-Google Calendar Integration: Can check and inform you about your upcoming events.
-Prerequisites
-Before using the voice assistant, make sure you have the following dependencies installed:
+## Overview
 
-Python 3.x
-Required Python libraries (pip install -r requirements.txt):
-speech_recognition
-playsound
-pyttsx3
-gTTS (Google Text-to-Speech)
-google-auth
-google-auth-oauthlib
-google-auth-httplib2
-google-api-python-client
-pytz
-Getting Started
-Set up Google Calendar API:
+This is a simple voice assistant project built in Python. It can listen to voice commands, process them, and respond with audio feedback. The assistant is designed to interact with your Google Calendar, providing information about your upcoming events.
 
-Follow the instructions to create a project and enable the Google Calendar API in the Google Calendar API Python Quickstart guide.
-Download the JSON credentials file and save it as credentials.json in the same directory as your code.
-Run the Assistant:
+## Features
 
-Execute the main.py file using Python 3.x.
-Wake Word:
+- **Speech Recognition**: Utilizes the `speech_recognition` library for converting spoken words into text.
+- **Voice Commands**: Recognizes predefined voice commands to perform specific actions.
+- **Google Calendar Integration**: Capable of checking and informing you about your upcoming events.
 
-Use the specified wake word (e.g., "hemesh," "hey mesh," etc.) to activate the assistant.
-Voice Commands:
+## Prerequisites
 
-Issue voice commands like "What do I have on Wednesday?" to interact with the assistant.
-Usage Examples
-Wake Word: Say the wake word to activate the assistant.
-Calendar Queries: Ask questions like "Do I have plans today?" or "Am I busy tomorrow?" to get information about your calendar events.
-Limitations
-This is a basic voice assistant and does not employ advanced Natural Language Processing (NLP) techniques for understanding complex queries.
-It recognizes a predefined set of voice commands and may not handle all possible variations.
-Future Improvements
-Implement more advanced NLP to enhance natural language understanding.
-Add support for additional voice commands and features.
-Improve error handling and user feedback.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Before using the voice assistant, ensure you have the following dependencies installed:
+
+- Python 3.x
+- Required Python libraries (you can install them using `pip install -r requirements.txt`):
+  - `speech_recognition`
+  - `playsound`
+  - `pyttsx3`
+  - `gTTS` (Google Text-to-Speech)
+  - `google-auth`
+  - `google-auth-oauthlib`
+  - `google-auth-httplib2`
+  - `google-api-python-client`
+  - `pytz`
+
+## Getting Started
+
+Follow these steps to set up and run the assistant:
+
+1. **Set up Google Calendar API**:
+   - Create a new project and enable the Google Calendar API by following the instructions in the [Google Calendar API Python Quickstart guide](https://developers.google.com/calendar/quickstart).
+   - Download the JSON credentials file and save it as `credentials.json` in the same directory as your code.
+
+2. **Run the Assistant**:
+   - Execute the `main.py` file using Python 3.x.
+
+3. **Wake Word**:
+   - Use the specified wake word  to activate the assistant.
+
+4. **Voice Commands**:
+   - Issue voice commands like to interact with the assistant.
+
+## Future Improvements
+
+
+- Implement more advanced NLP to enhance natural language understanding.
+- Add support for additional voice commands and features.
+- Improve error handling and user feedback.
+
+
+
